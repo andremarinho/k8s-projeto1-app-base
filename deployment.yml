@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: mysql
-        image: banco:1.0
+        image: gcr.io/balmy-coral-368823/banco
         ports:
         - containerPort: 3306
