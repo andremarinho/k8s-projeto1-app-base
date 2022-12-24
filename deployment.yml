@@ -16,6 +16,9 @@ spec:
     spec:
       containers:
       - name: mysql
+        env:          
+        - name: MYSQL_ROOT_PASSWORD
+          value: 12345678
         image: gcr.io/balmy-coral-368823/banco
         ports:
         - containerPort: 3306
