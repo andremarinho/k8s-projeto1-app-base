@@ -5,7 +5,7 @@ COPY index.php /var/www/html/
 COPY conexao.php /var/www/html/
 
 RUN apt-get update && apt-get install -y \
-        libfreetyp6-dev \
+        libfreetype6-dev \
         libjpeg62-turbo-dev \
         libpng-dev \
     && docker-php-ext-configure gd --with-freetype -with-jpeg \
